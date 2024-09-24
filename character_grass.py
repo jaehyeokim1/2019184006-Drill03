@@ -47,11 +47,26 @@ def run_left():
         draw_boy(0,y)
     pass
 
-def run_triangle():
-    run_left()
-    #run_diagonal()
-    #run_bottom()
+def run_diagonal1():
+    print('Diagonal1')
 
+    x, y = 800, 600  
+    
+    while x > 400 and y > 300:  
+        x = x - 10  # x 좌표 감소 (왼쪽으로 이동)
+        y = y - 10  # y 좌표 감소 (아래로 이동)def run_triangle():
+        draw_boy(x,y)
+
+def run_diagonal2():
+    print('Diagonal2')
+
+    x, y = 400,300
+
+    while x > 0 and y < 600:
+        x = x - 10
+        y = y + 10
+        draw_boy(x,y)
+        
 def run_rectangle():
     print('Rectangle')
     #run_top()
@@ -60,6 +75,10 @@ def run_rectangle():
     #run_left()
     pass
 
+def run_triangle():
+    run_diagonal1()
+    run_diagonal2()
+    run_top()
 while True:
     #run_circle()
     #run_rectangle()
