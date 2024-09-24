@@ -47,18 +47,23 @@ def run_left():
         draw_boy(0,y)
     pass
 
+def run_triangle():
+    run_left()
+    #run_diagonal()
+    #run_bottom()
 
 def run_rectangle():
     print('Rectangle')
-    run_top()
-    run_right()
-    run_bottom()
-    run_left()
+    #run_top()
+    #run_right()
+    #run_bottom()
+    #run_left()
     pass
 
 while True:
-    run_circle()
-    run_rectangle()
+    #run_circle()
+    #run_rectangle()
+    run_triangle()
     break
 
 close_canvas()
